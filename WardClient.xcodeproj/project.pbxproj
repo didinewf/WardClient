@@ -14,6 +14,8 @@
 		A6D02CC0205E8B29001DF2D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D02CBE205E8B29001DF2D8 /* LaunchScreen.storyboard */; };
 		A6D02CCB205E8B29001DF2D8 /* WardClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D02CCA205E8B29001DF2D8 /* WardClientTests.swift */; };
 		A6D02CD6205E8B29001DF2D8 /* WardClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D02CD5205E8B29001DF2D8 /* WardClientUITests.swift */; };
+		A6D02CE720610AAE001DF2D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6D02CE920610AAE001DF2D8 /* Localizable.strings */; };
+		A6D02CF32061471D001DF2D8 /* SentencePictureMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D02CF22061471D001DF2D8 /* SentencePictureMatchingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +42,18 @@
 		A6D02CBA205E8B29001DF2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6D02CBC205E8B29001DF2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D02CBF205E8B29001DF2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A6D02CC1205E8B29001DF2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D02CC6205E8B29001DF2D8 /* WardClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WardClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D02CCA205E8B29001DF2D8 /* WardClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardClientTests.swift; sourceTree = "<group>"; };
 		A6D02CCC205E8B29001DF2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D02CD1205E8B29001DF2D8 /* WardClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WardClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D02CD5205E8B29001DF2D8 /* WardClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardClientUITests.swift; sourceTree = "<group>"; };
 		A6D02CD7205E8B2A001DF2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D02CE3205EAD26001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		A6D02CE4205EAD26001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A6D02CE820610AAE001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A6D02CEB20610D1D001DF2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A6D02CEC206136AC001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = he; path = he.lproj/Info.plist; sourceTree = "<group>"; };
+		A6D02CF22061471D001DF2D8 /* SentencePictureMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencePictureMatchingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +106,12 @@
 			children = (
 				A6D02CB5205E8B29001DF2D8 /* AppDelegate.swift */,
 				A6D02CB7205E8B29001DF2D8 /* ViewController.swift */,
+				A6D02CE920610AAE001DF2D8 /* Localizable.strings */,
 				A6D02CB9205E8B29001DF2D8 /* Main.storyboard */,
+				A6D02CF22061471D001DF2D8 /* SentencePictureMatchingViewController.swift */,
 				A6D02CBC205E8B29001DF2D8 /* Assets.xcassets */,
 				A6D02CBE205E8B29001DF2D8 /* LaunchScreen.storyboard */,
-				A6D02CC1205E8B29001DF2D8 /* Info.plist */,
+				A6D02CED206136AC001DF2D8 /* Info.plist */,
 			);
 			path = WardClient;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D02CC0205E8B29001DF2D8 /* LaunchScreen.storyboard in Resources */,
+				A6D02CE720610AAE001DF2D8 /* Localizable.strings in Resources */,
 				A6D02CBD205E8B29001DF2D8 /* Assets.xcassets in Resources */,
 				A6D02CBB205E8B29001DF2D8 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D02CB8205E8B29001DF2D8 /* ViewController.swift in Sources */,
+				A6D02CF32061471D001DF2D8 /* SentencePictureMatchingViewController.swift in Sources */,
 				A6D02CB6205E8B29001DF2D8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +311,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A6D02CBA205E8B29001DF2D8 /* Base */,
+				A6D02CE3205EAD26001DF2D8 /* he */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,8 +320,26 @@
 			isa = PBXVariantGroup;
 			children = (
 				A6D02CBF205E8B29001DF2D8 /* Base */,
+				A6D02CE4205EAD26001DF2D8 /* he */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A6D02CE920610AAE001DF2D8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D02CE820610AAE001DF2D8 /* he */,
+				A6D02CEB20610D1D001DF2D8 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A6D02CED206136AC001DF2D8 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D02CEC206136AC001DF2D8 /* he */,
+			);
+			name = Info.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -319,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -376,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -428,12 +460,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEK3Y78256;
-				INFOPLIST_FILE = WardClient/Info.plist;
+				INFOPLIST_FILE = WardClient/he.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HUJI.ELSC.WardClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -443,12 +475,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEK3Y78256;
-				INFOPLIST_FILE = WardClient/Info.plist;
+				INFOPLIST_FILE = WardClient/he.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HUJI.ELSC.WardClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
