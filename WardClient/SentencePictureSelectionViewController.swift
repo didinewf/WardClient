@@ -1,5 +1,5 @@
 //
-//  SentencePictureSelectionView.swift
+//  SentencePictureSelectionViewController.swift
 //  WardClient
 //
 //  Created by Haida on 3/22/18.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SentencePictureSelectionView: UIViewController {
+class SentencePictureSelectionViewController: UIViewController {
 
     // MARK: Properties
     
