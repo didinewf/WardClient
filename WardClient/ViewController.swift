@@ -11,8 +11,26 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        var instructions: [String]?
+        
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print("I'm here")
+        do {
+            if let path = Bundle.main.path(forResource: "Script", ofType: "txt"){
+                let data = try String(contentsOfFile:path, encoding: String.Encoding.utf8)
+                instructions = data.components(separatedBy: "\n")
+                print(instructions ?? "")
+                print("gaga")
+            }
+        } catch let err as NSError {
+            // do something with Error
+            print(err)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

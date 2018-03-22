@@ -8,12 +8,15 @@
 
 import UIKit
 
-class SentencePictureMatchingViewController: UIViewController {
+class SentencePictureMatchingViewController: ViewControllerWithSound {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
+        playSound()
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +35,12 @@ class SentencePictureMatchingViewController: UIViewController {
     }
     */
 
+    
+    @IBAction func SoundButton(_ sender: Any) {
+        
+        playSound()
+        
+    }
+    
+    
 }

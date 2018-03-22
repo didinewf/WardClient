@@ -79,7 +79,7 @@
         <!--View Controller-->
         <scene sceneID="t3x-bo-PZe">
             <objects>
-                <viewController id="vZh-sE-epV" sceneMemberID="viewController">
+                <viewController id="vZh-sE-epV" customClass="ViewController" customModule="WardClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9iW-uA-Njo">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,6 +136,7 @@
                                         <rect key="frame" x="934" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="Audio"/>
                                         <connections>
+                                            <action selector="SoundButton:" destination="eZg-bp-3Jz" eventType="touchUpInside" id="VdW-aN-uTi"/>
                                             <action selector="playAudioStimulus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FhR-WH-Lh3"/>
                                         </connections>
                                     </button>
@@ -214,7 +215,7 @@
         <image name="dogkisscat" width="2880" height="1800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TNg-e8-bxq"/>
-        <segue reference="56y-sF-Mfa"/>
+        <segue reference="P8b-4E-bUH"/>
+        <segue reference="GVv-3N-mEg"/>
     </inferredMetricsTieBreakers>
 </document>
