@@ -72,7 +72,7 @@ class SentencePictureSelectionView: UIViewController {
         
         DispatchQueue.main.async() {
             [unowned self] in
-            self.performSegue(withIdentifier: "OtherTask", sender: self)
+            self.performSegue(withIdentifier: "FromSelectionToMatching", sender: self)
         }
         
     }

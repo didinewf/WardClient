@@ -69,7 +69,7 @@
                     </view>
                     <connections>
                         <outlet property="textStimulus" destination="WHK-gk-SOo" id="Fbb-Jj-PfT"/>
-                        <segue destination="eZg-bp-3Jz" kind="show" identifier="OtherTask" id="TNg-e8-bxq"/>
+                        <segue destination="eZg-bp-3Jz" kind="show" identifier="FromSelectionToMatching" id="TNg-e8-bxq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,7 +89,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="GVv-3N-mEg"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="FromOperatorToSelection" id="GVv-3N-mEg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,7 +98,7 @@
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ToExperiment" id="4JQ-IC-jzJ"/>
-                        <segue destination="eZg-bp-3Jz" kind="show" id="P8b-4E-bUH"/>
+                        <segue destination="eZg-bp-3Jz" kind="show" identifier="FromOperatorToMatching" id="P8b-4E-bUH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWP-kB-HNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,7 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="J7x-Rf-bAl"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="56y-sF-Mfa"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="FromMatchingToSelection" id="56y-sF-Mfa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWy-O2-K4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -130,7 +130,7 @@
         <image name="Img1-2" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TNg-e8-bxq"/>
-        <segue reference="56y-sF-Mfa"/>
+        <segue reference="P8b-4E-bUH"/>
+        <segue reference="GVv-3N-mEg"/>
     </inferredMetricsTieBreakers>
 </document>
