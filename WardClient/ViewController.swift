@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func StartExperiment(_ sender: Any) {
+        
+        DispatchQueue.main.async() {
+            [unowned self] in
+            self.performSegue(withIdentifier: "FromOperatorToSelection", sender: self)
+        }
+        
+    }
     
 
 }

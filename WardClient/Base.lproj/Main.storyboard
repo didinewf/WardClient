@@ -85,10 +85,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTC-qd-BeC">
-                                <rect key="frame" x="489" y="369" width="46" height="30"/>
+                                <rect key="frame" x="450" y="354" width="125" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
+                                    <action selector="StartExperiment:" destination="tYC-Td-TbD" eventType="touchUpInside" id="2xN-Uq-xOg"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="FromOperatorToSelection" id="GVv-3N-mEg"/>
                                 </connections>
                             </button>
@@ -97,13 +99,13 @@
                         <viewLayoutGuide key="safeArea" id="Ef4-Nj-283"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="ToExperiment" id="4JQ-IC-jzJ"/>
                         <segue destination="eZg-bp-3Jz" kind="show" identifier="FromOperatorToMatching" id="P8b-4E-bUH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWP-kB-HNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tYC-Td-TbD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-935" y="936"/>
+            <point key="canvasLocation" x="-935.15624999999989" y="935.9375"/>
         </scene>
         <!--Sentence Picture Matching View Controller-->
         <scene sceneID="nOz-rZ-KLZ">
@@ -122,7 +124,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yvK-ed-7gH">
-                                <rect key="frame" x="40" y="40" width="944.5" height="50"/>
+                                <rect key="frame" x="20" y="40" width="984" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The cat kisses the dog." textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrN-cd-Ifq">
                                         <rect key="frame" x="0.0" y="7" width="296.5" height="36"/>
@@ -131,7 +133,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-0x-HYD">
-                                        <rect key="frame" x="894.5" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="934" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="Audio"/>
                                         <connections>
                                             <action selector="playAudioStimulus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FhR-WH-Lh3"/>
@@ -180,11 +182,6 @@
                                     <constraint firstItem="6Pm-Pr-NFt" firstAttribute="width" secondItem="4dS-yo-hQG" secondAttribute="width" id="hQ4-rr-UMI"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-H4-Yzm">
-                                <rect key="frame" x="447" y="283" width="131" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -192,9 +189,10 @@
                             <constraint firstItem="yvK-ed-7gH" firstAttribute="top" secondItem="J7x-Rf-bAl" secondAttribute="top" constant="20" id="ArK-WQ-DhN"/>
                             <constraint firstItem="S9r-wT-CdC" firstAttribute="top" secondItem="7ag-G0-Bgn" secondAttribute="bottom" constant="10" id="C9F-rW-UWZ"/>
                             <constraint firstItem="7ag-G0-Bgn" firstAttribute="top" secondItem="yvK-ed-7gH" secondAttribute="bottom" constant="15" id="dmc-pt-lpV"/>
+                            <constraint firstItem="J7x-Rf-bAl" firstAttribute="trailing" secondItem="yvK-ed-7gH" secondAttribute="trailing" constant="20" id="hdj-YE-3gu"/>
                             <constraint firstItem="yvK-ed-7gH" firstAttribute="centerX" secondItem="uBY-TQ-aqT" secondAttribute="centerX" id="kVl-oc-BEp"/>
                             <constraint firstItem="7ag-G0-Bgn" firstAttribute="centerX" secondItem="uBY-TQ-aqT" secondAttribute="centerX" id="nBZ-xe-2o1"/>
-                            <constraint firstItem="yvK-ed-7gH" firstAttribute="leading" secondItem="J7x-Rf-bAl" secondAttribute="leading" constant="40" id="nvU-S3-Mia"/>
+                            <constraint firstItem="yvK-ed-7gH" firstAttribute="leading" secondItem="J7x-Rf-bAl" secondAttribute="leading" constant="20" id="yh2-5S-amd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J7x-Rf-bAl"/>
                     </view>

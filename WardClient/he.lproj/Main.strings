@@ -1,3 +1,9 @@
 
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "BTC-qd-BeC"; */
+"BTC-qd-BeC.normalTitle" = "Start";
+
 /* Class = "UILabel"; text = "This is an English stimulus sentence."; ObjectID = "WHK-gk-SOo"; */
 "WHK-gk-SOo.text" = "הנה משפט בעברית.";
+
+/* Class = "UILabel"; text = "The cat kisses the dog."; ObjectID = "zrN-cd-Ifq"; */
+"zrN-cd-Ifq.text" = "The cat kisses the dog in Hebrew.";

@@ -49,13 +49,13 @@
 		A6D02CD1205E8B29001DF2D8 /* WardClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WardClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D02CD5205E8B29001DF2D8 /* WardClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardClientUITests.swift; sourceTree = "<group>"; };
 		A6D02CD7205E8B2A001DF2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6D02CE3205EAD26001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
 		A6D02CE4205EAD26001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A6D02CE820610AAE001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A6D02CEB20610D1D001DF2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A6D02CEC206136AC001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = he; path = he.lproj/Info.plist; sourceTree = "<group>"; };
 		A6D02CF22061471D001DF2D8 /* SentencePictureMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencePictureMatchingViewController.swift; sourceTree = "<group>"; };
 		A6D02CF42063D7F9001DF2D8 /* SentencePictureSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencePictureSelectionView.swift; sourceTree = "<group>"; };
+		A6D02CF72063F509001DF2D8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = A6D02CA9205E8B29001DF2D8;
 			productRefGroup = A6D02CB3205E8B29001DF2D8 /* Products */;
@@ -315,7 +316,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A6D02CBA205E8B29001DF2D8 /* Base */,
-				A6D02CE3205EAD26001DF2D8 /* he */,
+				A6D02CF72063F509001DF2D8 /* he */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
