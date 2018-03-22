@@ -112,7 +112,90 @@
                     <view key="view" contentMode="scaleToFill" id="uBY-TQ-aqT">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogkisscat" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ag-G0-Bgn">
+                                <rect key="frame" x="162" y="105" width="700" height="480"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="DPl-NB-fMi"/>
+                                    <constraint firstAttribute="height" constant="480" id="bNk-7j-Xrs"/>
+                                    <constraint firstAttribute="width" constant="700" id="hyz-YL-XfV"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yvK-ed-7gH">
+                                <rect key="frame" x="40" y="40" width="944.5" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The cat kisses the dog." textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrN-cd-Ifq">
+                                        <rect key="frame" x="0.0" y="7" width="296.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-0x-HYD">
+                                        <rect key="frame" x="894.5" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="Audio"/>
+                                        <connections>
+                                            <action selector="playAudioStimulus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FhR-WH-Lh3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="400" translatesAutoresizingMaskIntoConstraints="NO" id="S9r-wT-CdC">
+                                <rect key="frame" x="202" y="595" width="620" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Pm-Pr-NFt">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="OIV-I9-aGY"/>
+                                            <constraint firstAttribute="height" constant="110" id="yhJ-LU-hBY"/>
+                                        </constraints>
+                                        <state key="normal" image="Smile">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Button">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4dS-yo-hQG">
+                                        <rect key="frame" x="510" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="6UX-bO-p2x"/>
+                                            <constraint firstAttribute="height" constant="110" id="mWf-pL-FE1"/>
+                                        </constraints>
+                                        <state key="normal" image="Sad">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Button">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4dS-yo-hQG" firstAttribute="height" secondItem="6Pm-Pr-NFt" secondAttribute="height" id="HHk-2D-fHQ"/>
+                                    <constraint firstItem="6Pm-Pr-NFt" firstAttribute="width" secondItem="4dS-yo-hQG" secondAttribute="width" id="hQ4-rr-UMI"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-H4-Yzm">
+                                <rect key="frame" x="447" y="283" width="131" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S9r-wT-CdC" firstAttribute="centerX" secondItem="uBY-TQ-aqT" secondAttribute="centerX" id="5vx-Zv-30v"/>
+                            <constraint firstItem="yvK-ed-7gH" firstAttribute="top" secondItem="J7x-Rf-bAl" secondAttribute="top" constant="20" id="ArK-WQ-DhN"/>
+                            <constraint firstItem="S9r-wT-CdC" firstAttribute="top" secondItem="7ag-G0-Bgn" secondAttribute="bottom" constant="10" id="C9F-rW-UWZ"/>
+                            <constraint firstItem="7ag-G0-Bgn" firstAttribute="top" secondItem="yvK-ed-7gH" secondAttribute="bottom" constant="15" id="dmc-pt-lpV"/>
+                            <constraint firstItem="yvK-ed-7gH" firstAttribute="centerX" secondItem="uBY-TQ-aqT" secondAttribute="centerX" id="kVl-oc-BEp"/>
+                            <constraint firstItem="7ag-G0-Bgn" firstAttribute="centerX" secondItem="uBY-TQ-aqT" secondAttribute="centerX" id="nBZ-xe-2o1"/>
+                            <constraint firstItem="yvK-ed-7gH" firstAttribute="leading" secondItem="J7x-Rf-bAl" secondAttribute="leading" constant="40" id="nvU-S3-Mia"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="J7x-Rf-bAl"/>
                     </view>
                     <connections>
@@ -128,6 +211,9 @@
         <image name="Audio" width="50" height="50"/>
         <image name="Img1-1" width="500" height="500"/>
         <image name="Img1-2" width="500" height="500"/>
+        <image name="Sad" width="720" height="720"/>
+        <image name="Smile" width="720" height="720"/>
+        <image name="dogkisscat" width="2880" height="1800"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="P8b-4E-bUH"/>
