@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWy-O2-K4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.8671875" y="111.71875"/>
+            <point key="canvasLocation" x="553" y="1151"/>
         </scene>
     </scenes>
     <resources>
@@ -215,7 +215,7 @@
         <image name="dogkisscat" width="2880" height="1800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="P8b-4E-bUH"/>
+        <segue reference="TNg-e8-bxq"/>
         <segue reference="GVv-3N-mEg"/>
     </inferredMetricsTieBreakers>
 </document>
