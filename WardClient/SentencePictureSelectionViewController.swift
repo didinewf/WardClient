@@ -10,16 +10,39 @@ import UIKit
 
 class SentencePictureSelectionViewController: ViewControllerWithSound {
 
-    // MARK: Properties
+    @IBOutlet weak var textStimulus: UILabel!    
+    @IBOutlet weak var button1: RegisterAndMoveOnButton!
+    @IBOutlet weak var button2: RegisterAndMoveOnButton!
     
-    @IBOutlet weak var textStimulus: UILabel!
+    override func setButton1Image(image: UIImage) {
+        button1.setImage(image, for: .normal)
+    }
+    
+    override func setButton2Image(image: UIImage) {
+        button2.setImage(image, for: .normal)
+    }
+    
+    override func tellName() -> String {
+        return "Selection"
+    }
+    
+    override func buildScreen() {
         
+        textStimulus.text = current.run.getStimulusSentence()
+        button1.setImage(current.run.getImage(index: 1), for: .normal)
+        button2.setImage(current.run.getImage(index: 2), for: .normal)
+    
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        playSound()
+        buildScreen()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500), execute: {
+                       self.playSound(sound: current.run.getSound())
+        })
 
     }
 
@@ -43,22 +66,20 @@ class SentencePictureSelectionViewController: ViewControllerWithSound {
     
     @IBAction func playAudioStimulus(_ sender: UIButton) {
         
-        playSound()
+        playSound(sound: current.run.getSound())
+        
+    }
+   
+    
+    @IBAction func responseButton1(_ sender: RegisterAndMoveOnButton) {
+        
+        sender.moveOn(response: "Button1" ,sender: self)
         
     }
     
-    @IBAction func responseButton1(_ sender: UIButton) {
+    @IBAction func responseButton2(_ sender: RegisterAndMoveOnButton) {
         
-        DispatchQueue.main.async() {
-            [unowned self] in
-            self.performSegue(withIdentifier: "FromSelectionToMatching", sender: self)
-        }
-        
-    }
-    
-    @IBAction func responseButton2(_ sender: UIButton) {
-        
-        textStimulus.text = NSLocalizedString("Response to Button 2", comment: "Localization test for Button 2")
+        sender.moveOn(response: "Button2" ,sender: self)
         
     }
     

@@ -1,4 +1,0 @@
-PictureMatching Sentence1 Sound1 Picture1
-PictureMatching Sentence2 Sound2 Picture2
-PictureSeletion Sentence3 Sound3 Picture3-1 Picture3-1
-PictureSeletion Sentence4 Sound4 Picture4-1 Picture4-1

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61DCD5020693F0800B0A6DF /* RegisterAndMoveOnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649A8B62069349E002077E3 /* RegisterAndMoveOnButton.swift */; };
+		A61DCD522069554500B0A6DF /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61DCD512069554500B0A6DF /* ExitViewController.swift */; };
+		A649A8B520690EB5002077E3 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649A8B420690EB5002077E3 /* SwitchViewController.swift */; };
 		A6D02CB6205E8B29001DF2D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D02CB5205E8B29001DF2D8 /* AppDelegate.swift */; };
-		A6D02CB8205E8B29001DF2D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D02CB7205E8B29001DF2D8 /* ViewController.swift */; };
+		A6D02CB8205E8B29001DF2D8 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D02CB7205E8B29001DF2D8 /* OperatorViewController.swift */; };
 		A6D02CBB205E8B29001DF2D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D02CB9205E8B29001DF2D8 /* Main.storyboard */; };
 		A6D02CBD205E8B29001DF2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D02CBC205E8B29001DF2D8 /* Assets.xcassets */; };
 		A6D02CC0205E8B29001DF2D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D02CBE205E8B29001DF2D8 /* LaunchScreen.storyboard */; };
@@ -38,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A61DCD512069554500B0A6DF /* ExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitViewController.swift; sourceTree = "<group>"; };
+		A649A8B420690EB5002077E3 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		A649A8B62069349E002077E3 /* RegisterAndMoveOnButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAndMoveOnButton.swift; sourceTree = "<group>"; };
 		A6D02CB2205E8B29001DF2D8 /* WardClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WardClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D02CB5205E8B29001DF2D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6D02CB7205E8B29001DF2D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6D02CB7205E8B29001DF2D8 /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
 		A6D02CBA205E8B29001DF2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6D02CBC205E8B29001DF2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D02CBF205E8B29001DF2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,7 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				A6D02CB5205E8B29001DF2D8 /* AppDelegate.swift */,
-				A6D02CB7205E8B29001DF2D8 /* ViewController.swift */,
+				A6D02CB7205E8B29001DF2D8 /* OperatorViewController.swift */,
+				A649A8B420690EB5002077E3 /* SwitchViewController.swift */,
+				A61DCD512069554500B0A6DF /* ExitViewController.swift */,
+				A649A8B62069349E002077E3 /* RegisterAndMoveOnButton.swift */,
 				A6D02CF82064062D001DF2D8 /* ViewControllerWithSound.swift */,
 				A6D02CE920610AAE001DF2D8 /* Localizable.strings */,
 				A6D02CB9205E8B29001DF2D8 /* Main.storyboard */,
@@ -203,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ELSC;
 				TargetAttributes = {
 					A6D02CB1205E8B29001DF2D8 = {
@@ -277,10 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D02CF92064062D001DF2D8 /* ViewControllerWithSound.swift in Sources */,
-				A6D02CB8205E8B29001DF2D8 /* ViewController.swift in Sources */,
+				A6D02CB8205E8B29001DF2D8 /* OperatorViewController.swift in Sources */,
+				A61DCD5020693F0800B0A6DF /* RegisterAndMoveOnButton.swift in Sources */,
 				A6D02CF32061471D001DF2D8 /* SentencePictureMatchingViewController.swift in Sources */,
+				A61DCD522069554500B0A6DF /* ExitViewController.swift in Sources */,
 				A6D02CB6205E8B29001DF2D8 /* AppDelegate.swift in Sources */,
 				A6D02CF52063D7F9001DF2D8 /* SentencePictureSelectionViewController.swift in Sources */,
+				A649A8B520690EB5002077E3 /* SwitchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +381,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -376,6 +389,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -427,6 +441,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -434,6 +449,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -470,6 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEK3Y78256;
 				INFOPLIST_FILE = WardClient/he.lproj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HUJI.ELSC.WardClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEK3Y78256;
 				INFOPLIST_FILE = WardClient/he.lproj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HUJI.ELSC.WardClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";

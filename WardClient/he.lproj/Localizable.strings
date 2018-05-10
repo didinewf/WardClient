@@ -6,5 +6,28 @@
   Copyright © 2018 ELSC. All rights reserved.
 */
 
-"Response to Button 1" = "Hebrew response to Button 1";
-"Response to Button 2" = "Hebrew response to Button 2";
+"The girl photographs the old woman" = "הבחורה מצלמת את האישה הזקנה";
+"The old woman sits in a couch" = "אישה זקנה יושבת בכורסה";
+"The woman the girl covers is blonde" = "האישה שהבחורה מכסה היא בלונדינית";
+"The woman who covers the girl is blonde" = "האישה שמכסה את הבחורה היא בלונדינית";
+"The woman the girl covers is old" = "האישה שהבחורה מכסה היא זקנה";
+"The woman who covers the girl is old" = "האישה שמכסה את הבחורה היא זקנה";
+"The woman the girl pushes is blonde" = "האישה שהבחורה דוחפת היא בלודינית";
+"The woman who pushes the girl is blonde" = "האישה שדוחפת את הבחורה היא בלונדינית";
+"The woman the girl pushes is old" = "האישה שהבחורה דוחפת היא זקנה";
+"The woman who pushes the girl is old" = "האישה שדוחפת את הבחורה היא זקנה";
+"The woman the girl photographs is blonde" = "האישה שהבחורה מצלמת היא בלונדינית";
+"The woman who photographs the girl is blonde" = "האישה שמצלמת את הבחורה היא בלונדינית";
+"The woman the girl photographs is old" = "האישה שהבחורה מצלמת היא זקנה";
+"The woman who photographs the girl is old" = "האישה שמצלמת את הבחורה היא זקנה";
+"The pillow the blanket occludes is blue" = "הכרית שהשמיכה מכסה היא כחולה";
+"The pillow the blanket occludes is red" = "הכרית שהשמיכה מכסה היא אדומה";
+"The pillow that occludes the blanket is blue" = "הכרית שמכסה את השמיכה היא כחולה";
+"The pillow that occludes the blanket is red" = "הכרית שמכסה את השמיכה היא אדומה";
+"In the picture there are blue circles" = "יש בתמונה עיגולים כחולים";
+"In the picture there are blue squares" = "יש בתמונה ריבועים כחולים";
+"In the picture there are more blue circles than yellow circles" = "בתמונה יש יותר עיגולים כחולים מעיגולים צהובים";
+"In the picture there are more yellow circles than blue circles" = "בתמונה יש יותר עיגולים צהובים מעיגולים כחולים";
+"In the picture there are less blue circles than yellow circles" = "בתמונה יש פחות עיגולים כחולים מעיגולים צהובים";
+"In the picture there are less yellow circles than blue circles" = "בתמונה יש פחות עיגולים צהובים מעיגולים כחולים";
+

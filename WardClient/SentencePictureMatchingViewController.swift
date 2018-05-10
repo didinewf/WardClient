@@ -10,12 +10,39 @@ import UIKit
 
 class SentencePictureMatchingViewController: ViewControllerWithSound {
 
+    @IBOutlet weak var textStimulus: UILabel!
+    @IBOutlet weak var pictureStimulus: UIImageView!
+    
+    @IBOutlet weak var positiveButton: RegisterAndMoveOnButton!
+    
+    @IBOutlet weak var negativeButton: RegisterAndMoveOnButton!
+    
+    override func setButton1Image(image: UIImage) {
+        positiveButton.setImage(image, for: .normal)
+    }
+    
+    override func setButton2Image(image: UIImage) {
+        negativeButton.setImage(image, for: .normal)
+    }
+    
+    override func tellName() -> String {
+        return "Matching"
+    }
+    
+    override func buildScreen() {
+        textStimulus.text = current.run.getStimulusSentence()
+        pictureStimulus.image = current.run.getImage()
+        positiveButton.setImage(UIImage(named: "Smile"), for: .normal)
+        negativeButton.setImage(UIImage(named: "Sad"), for: .normal)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    
-        playSound()
+        buildScreen()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500), execute: {
+            self.playSound(sound: current.run.getSound())
+        })
     
     }
 
@@ -35,12 +62,22 @@ class SentencePictureMatchingViewController: ViewControllerWithSound {
     }
     */
 
-    
     @IBAction func SoundButton(_ sender: Any) {
         
-        playSound()
+        playSound(sound: current.run.getSound())
         
     }
     
+    @IBAction func PositiveResponse(_ sender: RegisterAndMoveOnButton) {
+        
+        sender.moveOn(response: "Positive" ,sender: self)
+        
+    }
+    
+    @IBAction func NegativeResponse(_ sender: RegisterAndMoveOnButton) {
+        
+        sender.moveOn(response: "Negative" ,sender: self)
+
+    }
     
 }

@@ -9,18 +9,18 @@
 import UIKit
 import AVFoundation
 
-class ViewControllerWithSound: UIViewController {
-
+class ViewControllerWithSound: SwitchViewController {
+    
     var player: AVAudioPlayer?
-
-    func playSound() {
-        guard let asset = NSDataAsset(name:"Audio1") else { return }
+    
+    func playSound(sound: NSDataAsset?) {
+        guard let _ = sound else { return }
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             
             /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            player = try AVAudioPlayer(data:asset.data, fileTypeHint:"caf")
+            player = try AVAudioPlayer(data: sound!.data, fileTypeHint:"caf")
             
             guard let player = player else { return }
             

@@ -1,0 +1,37 @@
+Version 0.9
+Practice,PictureSelection,The girl photographs the old woman,girl photograph old,girl cover blonde,First
+Practice,PictureSelection,The old woman sits in a couch,girl photograph blonde,girl cover old,Second
+Condition 1,PictureSelection,The woman the girl photographs is old,old photograph girl,girl photograph old,Second
+Condition 1,PictureSelection,The pillow the blanket occludes is blue,blanket occlude blue,blue occlude blanket,First
+Condition 2,PictureSelection,The woman who covers the girl is blonde,blonde cover girl,girl cover blonde,First
+Condition 1,PictureSelection,The woman the girl covers is old,old cover girl,girl cover old,Second
+Condition 2,PictureSelection,The woman who pushes the girl is blonde,blonde push girl,girl push blonde,First
+Condition 2,PictureSelection,The pillow that occludes the blanket is blue,blue occlude blanket,blanket occlude blue,First
+Condition 1,PictureSelection,The woman the girl pushes is blonde,girl push blonde,blonde push girl,First
+Condition 2,PictureSelection,The woman who pushes the girl is old,girl push old,old push girl,Second
+Condition 1,PictureSelection,The pillow the blanket occludes is red,red occlude blanket,blanket occlude red,Second
+Condition 1,PictureSelection,The woman the girl photographs is blonde,girl photograph blonde,blonde photograph girl,First
+Condition 2,PictureSelection,The pillow that occludes the blanket is red,blanket occlude red,red occlude blanket,Second
+Condition 1,PictureSelection,The woman the girl covers is blonde,girl cover blonde,blonde cover girl,First
+Condition 2,PictureSelection,The woman who photographs the girl is old,girl photograph old,old photograph girl,Second
+Condition 1,PictureSelection,The woman the girl pushes is old,old push girl,girl push old,Second
+Condition 2,PictureSelection,The woman who covers the girl is old,girl cover old,old cover girl,Second
+Condition 2,PictureSelection,The woman who photographs the girl is blonde,blonde photograph girl,girl photograph blonde,First
+Practice,PictureMatching,In the picture there are blue circles,4 blue rows and 1 yellow row,Positive
+Practice,PictureMatching,In the picture there are blue squares,4 yellow columns and 1 blue column,Negative
+Condition 1,PictureMatching,In the picture there are more blue circles than yellow circles,4 blue rows and 1 yellow row,Positive
+Condition 2,PictureMatching,In the picture there are more blue circles than yellow circles,1 blue column and 4 yellow columns,Negative
+Condition 4,PictureMatching,In the picture there are less yellow circles than blue circles,1 blue column and 4 yellow columns,Negative
+Condition 2,PictureMatching,In the picture there are more blue circles than yellow circles,4 yellow rows and 1 blue row,Negative
+Condition 4,PictureMatching,In the picture there are less blue circles than yellow circles,4 blue columns and 1 yellow column,Negative
+Condition 3,PictureMatching,In the picture there are less yellow circles than blue circles,4 blue columns and 1 yellow column,Positive
+Condition 1,PictureMatching,In the picture there are more yellow circles than blue circles,1 blue row and 4 yellow rows,Positive
+Condition 2,PictureMatching,In the picture there are more yellow circles than blue circles,1 yellow column and 4 blue columns,Negative
+Condition 3,PictureMatching,In the picture there are less blue circles than yellow circles,1 blue row and 4 yellow rows,Positive
+Condition 1,PictureMatching,In the picture there are more blue circles than yellow circles,1 yellow column and 4 blue columns,Positive
+Condition 4,PictureMatching,In the picture there are less yellow circles than blue circles,4 yellow rows and 1 blue row,Negative
+Condition 3,PictureMatching,In the picture there are less yellow circles than blue circles,1 yellow row and 4 blue rows,Positive
+Condition 3,PictureMatching,In the picture there are less blue circles than yellow circles,4 yellow columns and 1 blue column,Positive
+Condition 1,PictureMatching,In the picture there are more yellow circles than blue circles,4 yellow columns and 1 blue column,Positive
+Condition 4,PictureMatching,In the picture there are less blue circles than yellow circles,1 yellow row and 4 blue rows,Negative
+Condition 2,PictureMatching,In the picture there are more yellow circles than blue circles,4 blue rows and 1 yellow row,Negative
