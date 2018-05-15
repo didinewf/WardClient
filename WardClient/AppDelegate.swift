@@ -10,7 +10,7 @@ import UIKit
 
 struct AppPersona {
     static let name = "WardClient"
-    static let version = "0.3"
+    static let version = "0.5"
 }
 
 struct PatientRecord {

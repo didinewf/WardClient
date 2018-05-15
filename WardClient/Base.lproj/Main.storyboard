@@ -28,14 +28,63 @@
             </objects>
             <point key="canvasLocation" x="505" y="-3"/>
         </scene>
-        <!--View Controller With Sound-->
+        <!--Player View Controller-->
         <scene sceneID="qEW-HO-OUA">
             <objects>
-                <viewController id="l28-xX-BEL" customClass="ViewControllerWithSound" customModule="WardClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l28-xX-BEL" customClass="AVPlayerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JNR-tI-iJB">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oTD-Tr-S0z">
+                                <rect key="frame" x="207.5" y="60" width="609.5" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an English stimulus sentence" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNM-JF-nIW">
+                                        <rect key="frame" x="0.0" y="10" width="609.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFS-6F-ZRn">
+                                <rect key="frame" x="904" y="40" width="100" height="100"/>
+                                <state key="normal" image="Audio"/>
+                                <connections>
+                                    <action selector="playAudioStimulus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ura-xS-kW3"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-sQ-0Dd">
+                                <rect key="frame" x="20" y="208" width="984" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLj-Tc-ivj" customClass="RegisterAndMoveOnButton" customModule="WardClient" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="473" height="500"/>
+                                        <state key="normal" image="blonde cover girl"/>
+                                        <connections>
+                                            <action selector="responseButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ytw-c4-CiJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9S-9q-o4t" customClass="RegisterAndMoveOnButton" customModule="WardClient" customModuleProvider="target">
+                                        <rect key="frame" x="513" y="0.0" width="471" height="500"/>
+                                        <state key="normal" image="girl cover blonde"/>
+                                        <connections>
+                                            <action selector="responseButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JDg-Wt-2ZY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oTD-Tr-S0z" firstAttribute="top" secondItem="7gc-qo-dh9" secondAttribute="top" constant="40" id="6NQ-v0-yPg"/>
+                            <constraint firstItem="oTD-Tr-S0z" firstAttribute="centerX" secondItem="JNR-tI-iJB" secondAttribute="centerX" id="CqY-pM-bva"/>
+                            <constraint firstItem="dvx-sQ-0Dd" firstAttribute="top" secondItem="oTD-Tr-S0z" secondAttribute="bottom" constant="80" id="Hm3-RR-HmW"/>
+                            <constraint firstItem="7gc-qo-dh9" firstAttribute="bottom" secondItem="dvx-sQ-0Dd" secondAttribute="bottom" constant="60" id="JGh-Yk-akq"/>
+                            <constraint firstItem="dvx-sQ-0Dd" firstAttribute="leading" secondItem="7gc-qo-dh9" secondAttribute="leading" constant="20" id="Mgi-Up-6Ha"/>
+                            <constraint firstItem="RFS-6F-ZRn" firstAttribute="top" secondItem="7gc-qo-dh9" secondAttribute="top" constant="20" id="PBo-ba-AMc"/>
+                            <constraint firstItem="7gc-qo-dh9" firstAttribute="trailing" secondItem="RFS-6F-ZRn" secondAttribute="trailing" constant="20" id="hcd-kI-VYv"/>
+                            <constraint firstItem="7gc-qo-dh9" firstAttribute="trailing" secondItem="dvx-sQ-0Dd" secondAttribute="trailing" constant="20" id="o2H-tB-Op8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7gc-qo-dh9"/>
                     </view>
                     <connections>
@@ -333,8 +382,8 @@
         <image name="girl cover blonde" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TdE-3z-eER"/>
+        <segue reference="P8b-4E-bUH"/>
         <segue reference="NEg-eS-r5b"/>
-        <segue reference="zCA-qw-u3J"/>
+        <segue reference="cU7-RI-Nh6"/>
     </inferredMetricsTieBreakers>
 </document>
