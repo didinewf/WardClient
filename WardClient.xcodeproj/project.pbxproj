@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1ADA7120836FCE0092435F /* testdata.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ADA7020836FCE0092435F /* testdata.txt */; };
+		7F1ADA76208E18050092435F /* testdata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ADA75208E18050092435F /* testdata.csv */; };
+		7F1ADA7A209736D80092435F /* SentenceVerification.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ADA79209736D80092435F /* SentenceVerification.csv */; };
 		A6D02CB6205E8B29001DF2D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D02CB5205E8B29001DF2D8 /* AppDelegate.swift */; };
 		A6D02CB8205E8B29001DF2D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D02CB7205E8B29001DF2D8 /* ViewController.swift */; };
 		A6D02CBB205E8B29001DF2D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D02CB9205E8B29001DF2D8 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F1ADA7020836FCE0092435F /* testdata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = testdata.txt; path = ../../testdata.txt; sourceTree = "<group>"; };
+		7F1ADA75208E18050092435F /* testdata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = testdata.csv; path = ../../testdata.csv; sourceTree = "<group>"; };
+		7F1ADA79209736D80092435F /* SentenceVerification.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SentenceVerification.csv; path = ../../SentenceVerification.csv; sourceTree = "<group>"; };
 		A6D02CB2205E8B29001DF2D8 /* WardClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WardClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D02CB5205E8B29001DF2D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D02CB7205E8B29001DF2D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,8 @@
 		A6D02CB4205E8B29001DF2D8 /* WardClient */ = {
 			isa = PBXGroup;
 			children = (
+				7F1ADA79209736D80092435F /* SentenceVerification.csv */,
+				7F1ADA75208E18050092435F /* testdata.csv */,
 				A6D02CB5205E8B29001DF2D8 /* AppDelegate.swift */,
 				A6D02CB7205E8B29001DF2D8 /* ViewController.swift */,
 				A6D02CF82064062D001DF2D8 /* ViewControllerWithSound.swift */,
@@ -118,6 +126,7 @@
 				A6D02CBC205E8B29001DF2D8 /* Assets.xcassets */,
 				A6D02CBE205E8B29001DF2D8 /* LaunchScreen.storyboard */,
 				A6D02CED206136AC001DF2D8 /* Info.plist */,
+				7F1ADA7020836FCE0092435F /* testdata.txt */,
 			);
 			path = WardClient;
 			sourceTree = "<group>";
@@ -250,8 +259,11 @@
 			files = (
 				A6D02CC0205E8B29001DF2D8 /* LaunchScreen.storyboard in Resources */,
 				A6D02CE720610AAE001DF2D8 /* Localizable.strings in Resources */,
+				7F1ADA76208E18050092435F /* testdata.csv in Resources */,
 				A6D02CBD205E8B29001DF2D8 /* Assets.xcassets in Resources */,
+				7F1ADA7A209736D80092435F /* SentenceVerification.csv in Resources */,
 				A6D02CBB205E8B29001DF2D8 /* Main.storyboard in Resources */,
+				7F1ADA7120836FCE0092435F /* testdata.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
