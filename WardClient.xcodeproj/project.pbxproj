@@ -218,6 +218,11 @@
 					A6D02CB1205E8B29001DF2D8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A6D02CC5205E8B29001DF2D8 = {
 						CreatedOnToolsVersion = 9.2;
